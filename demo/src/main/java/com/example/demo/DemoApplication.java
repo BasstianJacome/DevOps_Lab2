@@ -15,7 +15,13 @@ public class DemoApplication {
 
 	@GetMapping
 	public String hello(){
+<<<<<<< HEAD
 		return "Good afternoon, Vinicio,Welcome to COMP367";
+=======
+
+		return "Good morning, Vinicio,Welcome to COMP367";
+
+>>>>>>> b49e27b5955f75fafef033cbbd3afbb25ac18cac
 	}
 
 }
