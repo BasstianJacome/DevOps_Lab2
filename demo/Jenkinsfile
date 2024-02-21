@@ -1,19 +1,19 @@
 pipeline {
-
     agent any
 
-   
     stages {
-        stage('Build') {
+        stage('Checkout') {
             steps {
                 // Checkout source code from repository
                 checkout scm
-
+            }
+        }
+        stage('Build') {
+            steps {
                 // Build Maven project
                 sh 'mvn clean package'
             }
-
-
         }
+        // Add additional stages for testing, deployment, etc.
     }
 }
