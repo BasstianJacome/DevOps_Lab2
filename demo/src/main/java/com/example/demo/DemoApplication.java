@@ -15,7 +15,7 @@ public class DemoApplication {
 
 	@GetMapping
 	public String hello(){
-		return " Welcome to COMP367";
+		return "Good afternoon, Vinicio,Welcome to COMP367";
 	}
 
 }
